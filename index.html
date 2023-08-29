@@ -8,18 +8,30 @@
             }
             p {
                 font-family: Poppins;
-                color: rgb(96,91,92);
             }
-            body {
-                background-color: rgba(207,149,135,225);
+            button {
+                font-family: Poppins;
+            }
+            div {
+                font-family: Poppins;
             }
         </style>
+        <title>Button Text Changer</title>
+        <script>
+            function changeText(newText) {
+                document.getElementById("textbox").textContent = newText;
+            }
+        </script>
     </head>
     <body>
         <center>
-            <img src="imgs/IMG_0055.jpg" alt="n/a" width="240" height="300" />
+            <img src="imgs/IMG_0055.jpg" alt="n/a" width="300" height="300" />
             <h1>CHRISTINA SHIH</h1>
-            <p>Hi! I'm Christina Shih, and I'm currently a second year computer science major.</p>
+            <button onclick="changeText('My name is Christina Shih, and I am currently a second year computer science major from Upper Saddle River, New Jersey.')">About Me</button>
+            <button onclick="changeText('Button 2 clicked')">Passions</button>
+            <button onclick="changeText('Button 3 clicked')">More Info!</button>
+            <div id="textbox"></div>
         </center>
+            
     </body>
 </html>
